@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мастерская Вячеслава | Перетяжка и реставрация мягкой мебели в Королёве и Мытищах</title>
+  <meta name="description" content="Профессиональная перетяжка и реставрация диванов, кресел, стульев и кроватей в Королёве, Мытищах и Москве. ⭐️ Рейтинг 5.0 на Яндекс Картах (126 отзывов). Выезд мастера с 500+ образцами тканей бесплатно.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts: Inter & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            sand: {
+              50: '#FDFBF7',
+              100: '#F7F3EA',
+              200: '#EFE6D5',
+              300: '#DFCDB3',
+              500: '#C5A880',
+              600: '#B08E61',
+              700: '#8C6D44',
+            },
+            charcoal: {
+              900: '#141517',
+              850: '#1C1E22',
+              800: '#25282E',
+              700: '#343840',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #141517;
+      color: #E5E7EB;
+      font-family: 'Inter', sans-serif;
+    }
+    .gold-gradient {
+      background: linear-gradient(135deg, #DFCDB3 0%, #C5A880 50%, #B08E61 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .glow-card:hover {
+      border-color: rgba(197, 168, 128, 0.4);
+      box-shadow: 0 10px 30px -10px rgba(197, 168, 128, 0.15);
+    }
+  </style>
+</head>
+<body class="bg-charcoal-900 text-slate-200 antialiased selection:bg-sand-500 selection:text-charcoal-900">
+
+  <!-- TOP BAR -->
+  <div class="bg-charcoal-850 border-b border-white/5 py-2 px-4 text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span class="text-slate-300 font-medium">Бесплатный выезд мастера с 500+ образцами тканей по Королёву, Мытищам и Москве</span>
+      </div>
+      <div class="flex items-center gap-4 text-[11px]">
+        <span><i class="fa-solid fa-star text-sand-500 mr-1"></i> Рейтинг 5.0 (126 отзывов на Яндекс Картах)</span>
+        <span><i class="fa-solid fa-shield-halved text-emerald-400 mr-1"></i> Гарантия 18 месяцев по договору</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER (Fixed Height h-9 Actions) -->
+  <header class="sticky top-0 z-50 bg-charcoal-900/95 backdrop-blur-md border-b border-white/10 transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand -->
+        <a href="#" class="flex items-center gap-3.5 group">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-sand-500 to-sand-600 flex items-center justify-center text-charcoal-900 font-bold text-xl shadow-lg group-hover:scale-105 transition-transform">
+            <i class="fa-solid fa-couch"></i>
+          </div>
+          <div>
+            <span class="text-lg sm:text-xl font-bold tracking-wider text-white uppercase block leading-none font-serif">Мастерская Вячеслава</span>
+            <span class="text-[11px] text-sand-500 font-medium tracking-wide flex items-center gap-1.5 mt-1">
+              Королёв • ул. Дзержинского, 18Б • Ремонт & Перетяжка
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-6 text-xs font-semibold uppercase tracking-wider text-slate-300">
+          <a href="#calculator" class="hover:text-sand-500 transition-colors">Калькулятор по фото</a>
+          <a href="#services" class="hover:text-sand-500 transition-colors">Услуги</a>
+          <a href="#fabrics" class="hover:text-sand-500 transition-colors">Ткани (500+)</a>
+          <a href="#gallery" class="hover:text-sand-500 transition-colors">Портфолио</a>
+          <a href="#reviews" class="hover:text-sand-500 transition-colors">Отзывы (126)</a>
+          <a href="#contacts" class="hover:text-sand-500 transition-colors">Контакты</a>
+        </nav>
+
+        <!-- Actions: Fixed Height h-9 -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <a href="tel:+79154232275" class="h-9 px-3.5 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 hover:border-sand-500/50 flex items-center gap-2 text-xs font-semibold text-slate-200 transition-all">
+            <i class="fa-solid fa-phone text-sand-500 text-xs"></i>
+            <span class="hidden lg:inline">+7 (915) 423-22-75</span>
+          </a>
+          <a href="https://wa.me/79154232275?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D1%83%D0%B7%D0%BD%D0%B0%D1%82%D1%8C%20%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D1%8C%20%D0%BF%D0%B5%D1%80%D0%B5%D1%82%D1%8F%D0%B6%D0%BA%D0%B8%20%D0%BC%D0%B5%D0%B1%D0%B5%D0%BB%D0%B8" target="_blank" class="h-9 px-3.5 sm:px-4 rounded-lg bg-[#25D366] hover:bg-[#20ba5a] text-white flex items-center gap-2 text-xs font-bold shadow-md transition-all">
+            <i class="fa-brands fa-whatsapp text-sm"></i>
+            <span>Оценить в WhatsApp</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative pt-12 pb-20 overflow-hidden bg-gradient-to-b from-charcoal-900 via-charcoal-850 to-charcoal-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Column -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="flex flex-wrap items-center gap-2.5">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-sand-500/10 border border-sand-500/30 text-sand-500 text-xs font-semibold">
+              <i class="fa-solid fa-award"></i>
+              <span>126 отзывов на 5.0 на Яндекс Картах</span>
+            </div>
+            <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-semibold">
+              <i class="fa-solid fa-truck-ramp-box"></i>
+              <span>Вывоз и обратная доставка мебели</span>
+            </div>
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight font-serif">
+            Перетяжка и реставрация мягкой мебели в <span class="gold-gradient">Королёве и Мытищах</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl font-light">
+            Подарите дивану или креслу вторую жизнь в 3–4 раза дешевле покупки нового. Заменим обивку, восстановим пружинные блоки, заменим поролон (ППУ) и укрепим каркас. Личный контроль мастера Вячеслава.
+          </p>
+
+          <!-- Hot Offer Box -->
+          <div class="p-5 rounded-2xl bg-charcoal-800/80 border border-sand-500/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div class="space-y-1">
+              <span class="inline-block px-2.5 py-0.5 rounded bg-sand-500 text-charcoal-900 text-[10px] font-black uppercase tracking-wider">Удобный сервис</span>
+              <h3 class="text-base font-bold text-white">Оценка стоимости по фото в WhatsApp за 15 минут</h3>
+              <p class="text-xs text-slate-400">Просто отправьте фото вашей мебели — рассчитаем точную смету и метраж ткани</p>
+            </div>
+            <a href="https://wa.me/79154232275?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9E%D1%82%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%8F%D1%8E%20%D1%84%D0%BE%D1%82%D0%BE%20%D0%BC%D0%B5%D0%B1%D0%B5%D0%BB%D0%B8%20%D0%B4%D0%BB%D1%8F%20%D0%BE%D1%86%D0%B5%D0%BD%D0%BA%D0%B8%20%D1%81%D1%82%D0%BE%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8%20%D0%BF%D0%B5%D1%80%D0%B5%D1%82%D1%8F%D0%B6%D0%BA%D0%B8." target="_blank" class="px-5 py-3 rounded-xl bg-[#25D366] hover:bg-[#20ba5a] text-white text-xs font-bold flex items-center gap-2 flex-shrink-0 shadow-lg shadow-emerald-950/40 transition-all">
+              <i class="fa-brands fa-whatsapp text-base"></i>
+              <span>Прислать фото в WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+            <a href="#calculator" class="h-13 px-8 rounded-xl bg-gradient-to-r from-sand-500 to-sand-600 hover:from-sand-400 hover:to-sand-500 text-charcoal-900 font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg shadow-sand-500/20 transition-all hover:scale-[1.02]">
+              <i class="fa-solid fa-calculator text-sm"></i>
+              <span>Рассчитать стоимость на сайте</span>
+            </a>
+            <a href="#gallery" class="h-13 px-6 rounded-xl bg-white/5 border border-white/15 hover:bg-white/10 hover:border-sand-500/40 text-white font-semibold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all">
+              <i class="fa-solid fa-images text-sand-500"></i>
+              <span>Смотреть работы До / После</span>
+            </a>
+          </div>
+
+          <!-- Trust stats -->
+          <div class="grid grid-cols-3 gap-4 pt-4 border-t border-white/10">
+            <div>
+              <div class="text-2xl font-bold text-white font-serif">500+</div>
+              <div class="text-xs text-slate-400 mt-0.5">Образцов тканей на выезд</div>
+            </div>
+            <div>
+              <div class="text-2xl font-bold text-sand-500 font-serif">5.0 ★</div>
+              <div class="text-xs text-slate-400 mt-0.5">Безупречная репутация</div>
+            </div>
+            <div>
+              <div class="text-2xl font-bold text-white font-serif">от 3 дней</div>
+              <div class="text-xs text-slate-400 mt-0.5">Срок готовности заказа</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Visual Showcase -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative rounded-3xl overflow-hidden border border-white/15 shadow-2xl bg-charcoal-800 group">
+            <img src="https://avatars.mds.yandex.net/get-altay/6548191/2a0000018dc23111fb5f826b30ec1a3a9534/XXL" alt="Перетяжка мебели Королев" class="w-full h-[480px] object-cover group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute inset-0 bg-gradient-to-t from-charcoal-900 via-transparent to-transparent"></div>
+            
+            <div class="absolute bottom-5 left-5 right-5 p-4 rounded-xl bg-charcoal-900/85 backdrop-blur-md border border-white/10">
+              <div class="flex items-center justify-between">
+                <div>
+                  <h4 class="text-sm font-bold text-white">Реальная работа мастерской</h4>
+                  <p class="text-xs text-slate-400">г. Королёв, ул. Дзержинского, 18Б</p>
+                </div>
+                <span class="px-2.5 py-1 rounded bg-sand-500/20 text-sand-500 text-xs font-bold font-mono">100% результат</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CALCULATOR SECTION -->
+  <section id="calculator" class="py-20 bg-charcoal-850 border-y border-white/5">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-sand-500 block mb-2">Прозрачный расчет</span>
+        <h2 class="text-2xl sm:text-4xl font-bold text-white font-serif">Калькулятор перетяжки мягкой мебели</h2>
+        <p class="text-slate-400 text-sm mt-3">Выберите тип вашей мебели, категорию ткани и дополнительные работы по реставрации.</p>
+      </div>
+
+      <div class="bg-charcoal-900 rounded-3xl border border-white/15 p-6 sm:p-10 shadow-2xl space-y-8">
+        
+        <!-- Step 1: Furniture Type -->
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-4 flex items-center gap-2">
+            <span class="w-6 h-6 rounded-full bg-sand-500 text-charcoal-900 flex items-center justify-center text-xs font-bold">1</span>
+            Выберите предмет мебели:
+          </label>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3" id="type-selector">
+            <button type="button" data-base="14000" data-name="Прямой диван" class="type-btn active p-4 rounded-xl border-2 border-sand-500 bg-sand-500/10 text-left transition-all">
+              <i class="fa-solid fa-couch text-xl text-sand-500 mb-2 block"></i>
+              <h4 class="text-sm font-bold text-white">Прямой диван</h4>
+              <span class="text-xs text-slate-400 mt-1 block">от 14 000 ₽</span>
+            </button>
+            <button type="button" data-base="22000" data-name="Угловой диван" class="type-btn p-4 rounded-xl border-2 border-white/10 bg-charcoal-800 text-left transition-all hover:border-white/30">
+              <i class="fa-solid fa-vector-square text-xl text-slate-400 mb-2 block"></i>
+              <h4 class="text-sm font-bold text-white">Угловой диван</h4>
+              <span class="text-xs text-slate-400 mt-1 block">от 22 000 ₽</span>
+            </button>
+            <button type="button" data-base="7500" data-name="Кресло" class="type-btn p-4 rounded-xl border-2 border-white/10 bg-charcoal-800 text-left transition-all hover:border-white/30">
+              <i class="fa-solid fa-chair text-xl text-slate-400 mb-2 block"></i>
+              <h4 class="text-sm font-bold text-white">Кресло</h4>
+              <span class="text-xs text-slate-400 mt-1 block">от 7 500 ₽</span>
+            </button>
+            <button type="button" data-base="12000" data-name="Изголовье кровати" class="type-btn p-4 rounded-xl border-2 border-white/10 bg-charcoal-800 text-left transition-all hover:border-white/30">
+              <i class="fa-solid fa-bed text-xl text-slate-400 mb-2 block"></i>
+              <h4 class="text-sm font-bold text-white">Кровать / Изголовье</h4>
+              <span class="text-xs text-slate-400 mt-1 block">от 12 000 ₽</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 2: Fabric Material -->
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-4 flex items-center gap-2">
+            <span class="w-6 h-6 rounded-full bg-sand-500 text-charcoal-900 flex items-center justify-center text-xs font-bold">2</span>
+            Категория обивочной ткани:
+          </label>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3" id="fabric-selector">
+            <button type="button" data-mult="1.0" data-name="Велюр / Рогожка" class="fab-btn active p-4 rounded-xl border border-sand-500 bg-sand-500/10 text-left transition-all">
+              <h4 class="text-sm font-bold text-white">Велюр / Рогожка (Стандарт)</h4>
+              <p class="text-xs text-slate-400 mt-1">Приятная текстура, высокая износостойкость</p>
+            </button>
+            <button type="button" data-mult="1.25" data-name="Флок «Антикоготь»" class="fab-btn p-4 rounded-xl border border-white/10 bg-charcoal-800 text-left transition-all hover:border-white/30">
+              <div class="flex items-center justify-between">
+                <h4 class="text-sm font-bold text-white">Флок «Антикоготь»</h4>
+                <span class="text-[10px] font-bold px-1.5 py-0.5 rounded bg-amber-500/20 text-amber-400">Хит</span>
+              </div>
+              <p class="text-xs text-slate-400 mt-1">Защита от когтей кошек и собак, легко чистится</p>
+            </button>
+            <button type="button" data-mult="1.6" data-name="Экокожа / Натуральная кожа" class="fab-btn p-4 rounded-xl border border-white/10 bg-charcoal-800 text-left transition-all hover:border-white/30">
+              <h4 class="text-sm font-bold text-white">Экокожа / Премиум кожа</h4>
+              <p class="text-xs text-slate-400 mt-1">Статусный вид, влагостойкость, для дома и офиса</p>
+            </button>
+          </div>
+        </div>
+
+        <!-- Step 3: Internal restoration options -->
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-4 flex items-center gap-2">
+            <span class="w-6 h-6 rounded-full bg-sand-500 text-charcoal-900 flex items-center justify-center text-xs font-bold">3</span>
+            Внутреннее восстановление (по желанию):
+          </label>
+          <div class="grid sm:grid-cols-2 gap-3">
+            <label class="flex items-start gap-3 p-3.5 rounded-xl border border-white/10 bg-charcoal-800 cursor-pointer hover:border-white/20 transition-all">
+              <input type="checkbox" data-cost="4500" data-title="Замена поролона (ППУ повышенной плотности)" class="addon-cb mt-1 w-4 h-4 accent-amber-500 rounded" checked>
+              <div class="flex-1">
+                <div class="flex items-center justify-between">
+                  <span class="text-sm font-bold text-white">Замена наполнителя (ППУ)</span>
+                  <span class="text-xs font-bold text-sand-500">+ 4 500 ₽</span>
+                </div>
+                <p class="text-[11px] text-slate-400 mt-0.5">Восстановление упругости, убирает продавленности</p>
+              </div>
+            </label>
+
+            <label class="flex items-start gap-3 p-3.5 rounded-xl border border-white/10 bg-charcoal-800 cursor-pointer hover:border-white/20 transition-all">
+              <input type="checkbox" data-cost="3500" data-title="Ремонт и усиление пружинного блока" class="addon-cb mt-1 w-4 h-4 accent-amber-500 rounded">
+              <div class="flex-1">
+                <div class="flex items-center justify-between">
+                  <span class="text-sm font-bold text-white">Ремонт пружинного блока</span>
+                  <span class="text-xs font-bold text-sand-500">+ 3 500 ₽</span>
+                </div>
+                <p class="text-[11px] text-slate-400 mt-0.5">Устранение скрипа, замена сломанных пружин «Боннель»</p>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Total and WhatsApp Dispatch -->
+        <div class="pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <span class="text-xs text-slate-400 uppercase tracking-wider block font-medium">Ориентировочная стоимость:</span>
+            <div class="flex items-baseline gap-3 mt-1">
+              <span id="mebel-total" class="text-3xl sm:text-4xl font-extrabold text-sand-500 font-serif">18 500 ₽</span>
+              <span id="mebel-desc" class="text-xs text-slate-400">Прямой диван, Велюр, замена ППУ</span>
+            </div>
+          </div>
+
+          <a id="whatsapp-calc-btn" href="#" target="_blank" class="w-full md:w-auto h-13 px-8 rounded-xl bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-3 shadow-lg shadow-emerald-950/40 transition-all hover:scale-[1.02]">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>Зафиксировать цену в WhatsApp</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FABRICS SHOWCASE -->
+  <section id="fabrics" class="py-20 bg-charcoal-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-sand-500 block mb-2">Огромная коллекция</span>
+        <h2 class="text-2xl sm:text-4xl font-bold text-white font-serif">Более 500 вариантов обивки</h2>
+        <p class="text-slate-400 text-sm mt-3">Мастер привезет все веера образцов тканей прямо к вам домой бесплатно, чтобы вы приложили их к интерьеру при вашем освещении.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 rounded-2xl bg-charcoal-850 border border-white/10 space-y-3">
+          <div class="w-10 h-10 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center text-lg">
+            <i class="fa-solid fa-cat"></i>
+          </div>
+          <h3 class="text-base font-bold text-white">Флок «Антикоготь»</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">Беспетельное полотно, за которое когти кошек не могут зацепиться. Водоотталкивающая пропитка Easy Clean.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-charcoal-850 border border-white/10 space-y-3">
+          <div class="w-10 h-10 rounded-lg bg-sand-500/10 text-sand-500 flex items-center justify-center text-lg">
+            <i class="fa-solid fa-feather"></i>
+          </div>
+          <h3 class="text-base font-bold text-white">Мебельный микровелюр</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">Бархатистая благородная поверхность с эффектом Soft-touch. Не вытирается и выдерживает до 80 000 циклов по Мартиндейлу.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-charcoal-850 border border-white/10 space-y-3">
+          <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg">
+            <i class="fa-solid fa-lines-leaning"></i>
+          </div>
+          <h3 class="text-base font-bold text-white">Скандинавская рогожка</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">Фактурное плетение в стиле IKEA и уютного лофта. Отличная воздухопроницаемость и практичность в ежедневном уходе.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-charcoal-850 border border-white/10 space-y-3">
+          <div class="w-10 h-10 rounded-lg bg-sand-500/10 text-sand-500 flex items-center justify-center text-lg">
+            <i class="fa-solid fa-gem"></i>
+          </div>
+          <h3 class="text-base font-bold text-white">Экокожа и натур. кожа</h3>
+          <p class="text-xs text-slate-400 leading-relaxed">Премиальные дышащие экокожи на микрофибре и натуральная итальянская кожа для реставрации статусной мебели.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REAL GALLERY (XXL WORKS) -->
+  <section id="gallery" class="py-20 bg-charcoal-850 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-sand-500 block mb-2">Наше портфолио</span>
+          <h2 class="text-2xl sm:text-4xl font-bold text-white font-serif">Фотографии выполненных работ</h2>
+        </div>
+        <p class="text-xs text-slate-400 mt-2 sm:mt-0">123 реальные работы в профиле Яндекс Карт</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        
+        <div class="relative rounded-2xl overflow-hidden group aspect-square bg-charcoal-800 border border-white/10">
+          <img src="https://avatars.mds.yandex.net/get-altay/6548191/2a0000018dc23111fb5f826b30ec1a3a9534/XXL" alt="Работа мастерской Вячеслава" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-charcoal-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 rounded-lg bg-charcoal-900/90 text-white text-xs font-semibold border border-white/20">Мастерская Вячеслава</span>
+          </div>
+        </div>
+        
+        <div class="relative rounded-2xl overflow-hidden group aspect-square bg-charcoal-800 border border-white/10">
+          <img src="https://avatars.mds.yandex.net/get-altay/11047345/2a0000018dc231126a5663110fc69554fb89/XXL" alt="Работа мастерской Вячеслава" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-charcoal-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 rounded-lg bg-charcoal-900/90 text-white text-xs font-semibold border border-white/20">Мастерская Вячеслава</span>
+          </div>
+        </div>
+        
+        <div class="relative rounded-2xl overflow-hidden group aspect-square bg-charcoal-800 border border-white/10">
+          <img src="https://avatars.mds.yandex.net/get-altay/11047345/2a0000018db859c0d5800bceb4ce89915457/XXL" alt="Работа мастерской Вячеслава" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-charcoal-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 rounded-lg bg-charcoal-900/90 text-white text-xs font-semibold border border-white/20">Мастерская Вячеслава</span>
+          </div>
+        </div>
+        
+        <div class="relative rounded-2xl overflow-hidden group aspect-square bg-charcoal-800 border border-white/10">
+          <img src="https://avatars.mds.yandex.net/get-altay/10578166/2a0000018db859c0d31c951face3912e2a58/XXL" alt="Работа мастерской Вячеслава" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-charcoal-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 rounded-lg bg-charcoal-900/90 text-white text-xs font-semibold border border-white/20">Мастерская Вячеслава</span>
+          </div>
+        </div>
+        
+        <div class="relative rounded-2xl overflow-hidden group aspect-square bg-charcoal-800 border border-white/10">
+          <img src="https://avatars.mds.yandex.net/get-altay/11395677/2a0000018db859c0db9c2d645956b71a6f6d/XXL" alt="Работа мастерской Вячеслава" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-charcoal-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 rounded-lg bg-charcoal-900/90 text-white text-xs font-semibold border border-white/20">Мастерская Вячеслава</span>
+          </div>
+        </div>
+        
+        <div class="relative rounded-2xl overflow-hidden group aspect-square bg-charcoal-800 border border-white/10">
+          <img src="https://avatars.mds.yandex.net/get-altay/11860411/2a0000018db859c0c9813afc30d7f2b74fa3/XXL" alt="Работа мастерской Вячеслава" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-charcoal-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 rounded-lg bg-charcoal-900/90 text-white text-xs font-semibold border border-white/20">Мастерская Вячеслава</span>
+          </div>
+        </div>
+        
+        <div class="relative rounded-2xl overflow-hidden group aspect-square bg-charcoal-800 border border-white/10">
+          <img src="https://avatars.mds.yandex.net/get-altay/11411122/2a0000018db85a0c530eda169dddabf2fb33/XXL" alt="Работа мастерской Вячеслава" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-charcoal-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 rounded-lg bg-charcoal-900/90 text-white text-xs font-semibold border border-white/20">Мастерская Вячеслава</span>
+          </div>
+        </div>
+        
+        <div class="relative rounded-2xl overflow-hidden group aspect-square bg-charcoal-800 border border-white/10">
+          <img src="https://avatars.mds.yandex.net/get-altay/11393517/2a0000018db85a4f6405c86e03c5c3431b3f/XXL" alt="Работа мастерской Вячеслава" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-charcoal-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 rounded-lg bg-charcoal-900/90 text-white text-xs font-semibold border border-white/20">Мастерская Вячеслава</span>
+          </div>
+        </div>
+        
+        <div class="relative rounded-2xl overflow-hidden group aspect-square bg-charcoal-800 border border-white/10">
+          <img src="https://avatars.mds.yandex.net/get-altay/10111752/2a0000018db85a4ec3b682f22fd0be6e5713/XXL" alt="Работа мастерской Вячеслава" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-charcoal-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 rounded-lg bg-charcoal-900/90 text-white text-xs font-semibold border border-white/20">Мастерская Вячеслава</span>
+          </div>
+        </div>
+        
+        <div class="relative rounded-2xl overflow-hidden group aspect-square bg-charcoal-800 border border-white/10">
+          <img src="https://avatars.mds.yandex.net/get-altay/10578166/2a0000018db85a4eb29e934aa21364f13b10/XXL" alt="Работа мастерской Вячеслава" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-charcoal-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 rounded-lg bg-charcoal-900/90 text-white text-xs font-semibold border border-white/20">Мастерская Вячеслава</span>
+          </div>
+        </div>
+        
+        <div class="relative rounded-2xl overflow-hidden group aspect-square bg-charcoal-800 border border-white/10">
+          <img src="https://avatars.mds.yandex.net/get-altay/11564583/2a0000018db89b6bb03fb1fd71cebe3de03b/XXL" alt="Работа мастерской Вячеслава" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-charcoal-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 rounded-lg bg-charcoal-900/90 text-white text-xs font-semibold border border-white/20">Мастерская Вячеслава</span>
+          </div>
+        </div>
+        
+        <div class="relative rounded-2xl overflow-hidden group aspect-square bg-charcoal-800 border border-white/10">
+          <img src="https://avatars.mds.yandex.net/get-altay/20781863/2a000001a0d8b642c2fb25c2370b84317389/XXL" alt="Работа мастерской Вячеслава" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+          <div class="absolute inset-0 bg-charcoal-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="px-3 py-1.5 rounded-lg bg-charcoal-900/90 text-white text-xs font-semibold border border-white/20">Мастерская Вячеслава</span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- VERIFIED REVIEWS -->
+  <section id="reviews" class="py-20 bg-charcoal-900 border-t border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sand-500/10 border border-sand-500/30 text-sand-500 text-xs font-bold mb-3">
+            <i class="fa-solid fa-star text-sand-500"></i>
+            <span>Рейтинг 5.0 из 5 • 126 отзывов на Яндекс Картах</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-bold text-white font-serif">Что говорят клиенты о Вячеславе</h2>
+        </div>
+        <a href="https://yandex.ru/maps/org/239858074199/" target="_blank" class="text-xs text-sand-500 hover:text-sand-400 font-semibold flex items-center gap-1.5 mt-4 md:mt-0">
+          <span>Смотреть все 126 отзывов на Яндекс Картах</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-[11px]"></i>
+        </a>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="p-6 rounded-2xl bg-charcoal-850 border border-white/10 hover:border-sand-500/30 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-sand-500/20 text-sand-500 flex items-center justify-center font-bold text-sm">
+                  Г
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white">Георгий Зацепин</h4>
+                  <span class="text-[11px] text-slate-400">2026-09-25</span>
+                </div>
+              </div>
+              <div class="flex text-amber-400 text-xs">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed italic line-clamp-6">
+              «Долго искал кому доверить реставрацию дивана, служившего верой и правдой пару десятилетий. На смену ему был куплен новый, а старый после реставрации планировал отправить на дачу. Выбирал мастеров по рекомендациям, в итоге обратился к Вячеславу. По итогу диван сделали так качественно, что всерьез задумался о том, чтобы новый отвезти на дачу, а отреставрированный вернуть домой! Искренне рекомендую Вячеслава и его команду за итоговый результат! В век информационных технологий решил оставить отзывы на всех известных мне площадках, чтобы у людей была возможность оживить дорогую им мебель! Спасибо!»
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-white/5 flex items-center justify-between text-[11px] text-slate-400">
+            <span>Проверенный отзыв с Карт</span>
+            <i class="fa-brands fa-yandex text-red-500"></i>
+          </div>
+        </div>
+        
+        <div class="p-6 rounded-2xl bg-charcoal-850 border border-white/10 hover:border-sand-500/30 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-sand-500/20 text-sand-500 flex items-center justify-center font-bold text-sm">
+                  L
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white">LARISA LARISA</h4>
+                  <span class="text-[11px] text-slate-400">2026-10-29</span>
+                </div>
+              </div>
+              <div class="flex text-amber-400 text-xs">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed italic line-clamp-6">
+              «Всем доброго времени суток. Искала мастерскую по перетяжки кухонного дивана, но цены неадекватные озвучивались. На Яндексе нашла телефон этой мастерской, все решилось за 5 минут . Вечером приехали с образцами тканей, забрали диван. Цена хорошая!! Через три дня уже привезли готовый диван. Все сделали шикарно, сшито отлично. Спасибо Вячеславу!! Рекомендую мастерскую!!!»
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-white/5 flex items-center justify-between text-[11px] text-slate-400">
+            <span>Проверенный отзыв с Карт</span>
+            <i class="fa-brands fa-yandex text-red-500"></i>
+          </div>
+        </div>
+        
+        <div class="p-6 rounded-2xl bg-charcoal-850 border border-white/10 hover:border-sand-500/30 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-sand-500/20 text-sand-500 flex items-center justify-center font-bold text-sm">
+                  Л
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white">Лариса С.</h4>
+                  <span class="text-[11px] text-slate-400">2025-05-27</span>
+                </div>
+              </div>
+              <div class="flex text-amber-400 text-xs">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed italic line-clamp-6">
+              «Всем доброго времени суток! Хочу оставить отзыв о работе Вячеслава и его команды. У нас был большой диван в кожзаме. За 10 лет в самых используемых местах облез. Решили перетянуть. Среди многих предложений на рынке, выбрали Ремонт мебели на Дзержинке. И не пожалели! Теперь нам сделали диван в натуральной коже. По стоимости почти в два раза ниже предложений на рынке. Качество пошива -выше всех похвал! Диван разобрали, увезли, а потом привезли и собрали. И всё это раньше заявленного срока. Спасибо огромное Вячеславу и его команде! Всем буду советовать обращаться только к Вам! »
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-white/5 flex items-center justify-between text-[11px] text-slate-400">
+            <span>Проверенный отзыв с Карт</span>
+            <i class="fa-brands fa-yandex text-red-500"></i>
+          </div>
+        </div>
+        
+        <div class="p-6 rounded-2xl bg-charcoal-850 border border-white/10 hover:border-sand-500/30 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-sand-500/20 text-sand-500 flex items-center justify-center font-bold text-sm">
+                  Х
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white">Хохлов</h4>
+                  <span class="text-[11px] text-slate-400">2026-07-30</span>
+                </div>
+              </div>
+              <div class="flex text-amber-400 text-xs">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed italic line-clamp-6">
+              «Спасибо большое за качественную,быструю работу
+Дивану подарили новую жизнь,он стал выглядеть намного лучше чем до покупки
+Всем рекомендую данную организацию!!!!
+Делают качественно и быстро»
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-white/5 flex items-center justify-between text-[11px] text-slate-400">
+            <span>Проверенный отзыв с Карт</span>
+            <i class="fa-brands fa-yandex text-red-500"></i>
+          </div>
+        </div>
+        
+        <div class="p-6 rounded-2xl bg-charcoal-850 border border-white/10 hover:border-sand-500/30 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-sand-500/20 text-sand-500 flex items-center justify-center font-bold text-sm">
+                  Е
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white">Екатерина Целуйко</h4>
+                  <span class="text-[11px] text-slate-400">2025-06-18</span>
+                </div>
+              </div>
+              <div class="flex text-amber-400 text-xs">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed italic line-clamp-6">
+              «Обратилась к Вячеславу по вопросу перетяжки кухонного уголка и стула, которые я уже перетягивала несколько раз в других организациях, в результате чего были потеряны изночальные лекалы обивочной ткани и рассыпался поролон.
+Оперативно отреагировали на запрос, предложили большой выбор ткани, также сказали, что могут для пошива использовать ткань заказчика.
+В итоге, перетянули прекрасно, восстановили лекалы, которые были изночально, заменили поролон, по моей просьбе пошили дополнительно, очень быстро и качественно две подушки и съёмные чехлы для посадочных мест на уголке, которые теперь, при необходимости я могу снять и постирать.
+Большое спасибо Вячеславу и его команде, за оперативную, прекрасно проделанную работу и чуткое отношение к заказчику!»
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-white/5 flex items-center justify-between text-[11px] text-slate-400">
+            <span>Проверенный отзыв с Карт</span>
+            <i class="fa-brands fa-yandex text-red-500"></i>
+          </div>
+        </div>
+        
+        <div class="p-6 rounded-2xl bg-charcoal-850 border border-white/10 hover:border-sand-500/30 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-sand-500/20 text-sand-500 flex items-center justify-center font-bold text-sm">
+                  Е
+                </div>
+                <div>
+                  <h4 class="text-sm font-bold text-white">Екатерина</h4>
+                  <span class="text-[11px] text-slate-400">2026-01-08</span>
+                </div>
+              </div>
+              <div class="flex text-amber-400 text-xs">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed italic line-clamp-6">
+              «Уважаемый Вячеслав и сотрудники мебельной реставрационной мастерской! Поздравляю вас с Новым годом и Рождеством! Искренне поблагодарю вас за оперативное выполнение работы по реставрации стульев. Вы меня очень выручили, работа выполнена точно в оговоренные сроки, стоимость приятная и она не изменилась при окончательном расчете! Качество работы отличное и меня очень порадовало, ткань выбирала из наличия (время поджимало). Конечный результат меня очень порадовал, стулья еще послужат! За доставку после ремонта отдельное спасибо!»
+            </p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-white/5 flex items-center justify-between text-[11px] text-slate-400">
+            <span>Проверенный отзыв с Карт</span>
+            <i class="fa-brands fa-yandex text-red-500"></i>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTS & LOCATION -->
+  <section id="contacts" class="py-20 bg-charcoal-850 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-5 space-y-6">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-sand-500 block mb-2">Всегда на связи</span>
+            <h2 class="text-2xl sm:text-4xl font-bold text-white font-serif">Контакты и адрес мастерской</h2>
+            <p class="text-sm text-slate-300 mt-2">Работаем в мастерской в Королёве и выезжаем с образцами по всем близлежащим городам.</p>
+          </div>
+
+          <div class="space-y-4">
+            <div class="p-4 rounded-xl bg-charcoal-900 border border-white/10 flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-sand-500/10 text-sand-500 flex items-center justify-center text-lg flex-shrink-0">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Адрес мастерской</h4>
+                <p class="text-sm text-white font-medium mt-0.5">г. Королёв, ул. Дзержинского, 18Б</p>
+                <span class="text-xs text-slate-400">Московская область</span>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-charcoal-900 border border-white/10 flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-sand-500/10 text-sand-500 flex items-center justify-center text-lg flex-shrink-0">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider">График работы</h4>
+                <p class="text-sm text-white font-medium mt-0.5">Ежедневно: 09:00 – 21:00</p>
+                <span class="text-xs text-emerald-400">Без выходных и праздников</span>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-xl bg-charcoal-900 border border-white/10 flex items-start gap-4">
+              <div class="w-10 h-10 rounded-lg bg-sand-500/10 text-sand-500 flex items-center justify-center text-lg flex-shrink-0">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Телефоны для связи</h4>
+                <a href="tel:+79154232275" class="text-sm text-white font-bold hover:text-sand-500 transition-colors mt-0.5 block">+7 (915) 423-22-75</a>
+                <a href="tel:+79267245888" class="text-xs text-slate-400 hover:text-white transition-colors block">+7 (926) 724-58-88 (дополнительный)</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-3 pt-2">
+            <a href="https://wa.me/79154232275" target="_blank" class="h-12 px-6 rounded-xl bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg transition-all">
+              <i class="fa-brands fa-whatsapp text-base"></i>
+              <span>Написать мастеру в WhatsApp</span>
+            </a>
+            <a href="https://yandex.ru/maps/org/239858074199/" target="_blank" class="h-12 px-6 rounded-xl bg-gradient-to-r from-red-600 to-red-700 hover:from-red-500 hover:to-red-600 text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg transition-all">
+              <i class="fa-brands fa-yandex"></i>
+              <span>Маршрут в Яндекс Картах</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="rounded-2xl overflow-hidden border border-white/15 h-[420px] bg-charcoal-900 shadow-2xl">
+            <iframe src="https://yandex.ru/map-widget/v1/?orgpage%5Bid%5D=239858074199&ll=37.834167%2C55.918889&z=16" width="100%" height="100%" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-8 bg-charcoal-900 border-t border-white/10 text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <span class="font-bold text-white font-serif">Мастерская Вячеслава</span>
+        <span>•</span>
+        <span>Королёв, ул. Дзержинского, 18Б</span>
+        <span>•</span>
+        <span>Рейтинг 5.0 ★</span>
+      </div>
+      <div>
+        <span>© 2026 Ремонт и перетяжка мебели. Все права защищены.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CALCULATOR SCRIPT -->
+  <script>
+    (function() {
+      let currentBase = 14000;
+      let currentTypeName = "Прямой диван";
+      let currentMultiplier = 1.0;
+      let currentFabricName = "Велюр / Рогожка";
+
+      const typeButtons = document.querySelectorAll('.type-btn');
+      const fabricButtons = document.querySelectorAll('.fab-btn');
+      const addonCheckboxes = document.querySelectorAll('.addon-cb');
+      const totalDisplay = document.getElementById('mebel-total');
+      const descDisplay = document.getElementById('mebel-desc');
+      const whatsappBtn = document.getElementById('whatsapp-calc-btn');
+
+      function calculate() {
+        let addonsSum = 0;
+        let selectedAddons = [];
+
+        addonCheckboxes.forEach(cb => {
+          if (cb.checked) {
+            const cost = parseFloat(cb.getAttribute('data-cost'));
+            addonsSum += cost;
+            selectedAddons.push(cb.getAttribute('data-title'));
+          }
+        });
+
+        const adjustedWork = Math.round(currentBase * currentMultiplier);
+        const total = adjustedWork + addonsSum;
+
+        totalDisplay.textContent = total.toLocaleString('ru-RU') + ' ₽';
+        descDisplay.textContent = currentTypeName + ', ' + currentFabricName + (selectedAddons.length > 0 ? ', с реставрацией' : '');
+
+        const msg = "Здравствуйте, Вячеслав! Я рассчитал стоимость перетяжки на сайте:\n" +
+          "• Предмет: " + currentTypeName + "\n" +
+          "• Ткань: " + currentFabricName + "\n" +
+          (selectedAddons.length > 0 ? "• Дополнительно: " + selectedAddons.join(', ') + "\n" : "") +
+          "• Ориентировочно: " + total.toLocaleString('ru-RU') + " ₽.\n\n" +
+          "Отправляю фото своей мебели для точной оценки. Подскажите по срокам?";
+
+        whatsappBtn.href = "https://wa.me/79154232275?text=" + encodeURIComponent(msg);
+      }
+
+      typeButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          typeButtons.forEach(b => {
+            b.classList.remove('border-sand-500', 'bg-sand-500/10');
+            b.classList.add('border-white/10', 'bg-charcoal-800');
+          });
+          btn.classList.add('border-sand-500', 'bg-sand-500/10');
+          btn.classList.remove('border-white/10', 'bg-charcoal-800');
+
+          currentBase = parseFloat(btn.getAttribute('data-base'));
+          currentTypeName = btn.getAttribute('data-name');
+          calculate();
+        });
+      });
+
+      fabricButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          fabricButtons.forEach(b => {
+            b.classList.remove('border-sand-500', 'bg-sand-500/10');
+            b.classList.add('border-white/10', 'bg-charcoal-800');
+          });
+          btn.classList.add('border-sand-500', 'bg-sand-500/10');
+          btn.classList.remove('border-white/10', 'bg-charcoal-800');
+
+          currentMultiplier = parseFloat(btn.getAttribute('data-mult'));
+          currentFabricName = btn.getAttribute('data-name');
+          calculate();
+        });
+      });
+
+      addonCheckboxes.forEach(cb => {
+        cb.addEventListener('change', calculate);
+      });
+
+      calculate();
+    })();
+  </script>
+</body>
+</html>
